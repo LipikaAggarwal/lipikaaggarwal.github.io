@@ -7,7 +7,7 @@ permalink: /about/
 A high school student ,learning <b>web development</b> and interested in <b>computer science</b>.  
 
 You can get in touch with me via DM on Instagram at 
-[lipika_aggarwal22](https://www.instagram.com/lipika_aggarwal22) 
+[lipika_aggarwal](https://www.instagram.com/lipika_aggarwal) 
 
 
 You can find me on Pinterest at 
