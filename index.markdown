@@ -5,4 +5,8 @@
 layout: home
 title: Home
 permalink: /Home/
+layout: page
+title: Skill
+permalink: /Skill/
+
 ---
