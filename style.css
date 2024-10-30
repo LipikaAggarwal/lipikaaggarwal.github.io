@@ -29,7 +29,7 @@ p{
 	font-size: 14px;
 	line-height: 20px;
 	color: #a9a9a9;
-	word-spacing: 1px;
+	word-spacing: 0.5px;
 
 }
 
@@ -57,6 +57,7 @@ p{
 	align-items: center;
 	position: fixed;
 	background-color: #202020;
+	z-index: 1000;
 }
 
 /* .logo a{
@@ -80,6 +81,9 @@ p{
 .navbar_items ul a:hover {
 	color: #1e90ff; /* Change color on hover */
  }
+ .navbar_items ul li a:active {
+    color: #1e90ff; /* Color for active link */
+}
 /* banner_image */
 .banner_image{
 	/* background: url('assets/2.jpeg') no-repeat top center; */
@@ -183,7 +187,7 @@ p{
 	width: 250px;
 	padding: 12px 20px; 
 	border: 1px solid #ccc;
-	color: white;
+	color: black;
 }
 
 .form_wrapper .form_input textarea{
@@ -192,7 +196,7 @@ p{
 	height: 80px;
 	resize: none;
 	border: 1px solid  #ccc;
-	color: white;
+	color: black;
 }
 /* .ourteam{
 	background: #f5f5f5;
@@ -201,6 +205,21 @@ p{
 .ourteam_wrapper{
 	display: flex;
 	flex-direction: column;
+}
+.ourteam_wrapper a {
+    color: #0056b3; /* Set your desired color */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Hover effect */
+.ourteam_wrapper a:hover {
+    color: #0056b3; /* Color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Visited link color */
+.ourteam_wrappera:visited {
+    color: #551a8b; /* Color for visited links */
 }
 .ourteam_wrapper h3{
 	padding-top: 20px;
@@ -333,10 +352,15 @@ p{
 	height: 20px;
 	z-index: 1;
 }
+.ourteam{
+	padding: 20px;
+	overflow: hidden;
+}
 .event-gallery {
     display: flex;
-    width: calc(200px * 5); /* Width of one set of images */
+    /* width: calc(200px * 5); Width of one set of images */
     animation: scroll 10s linear infinite; /* Continuous scrolling animation */
+	padding: 0 50px;
 }
 .event-gallery h5{
 	color: white;
@@ -363,6 +387,6 @@ p{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(calc(-100% + 100px)); /* Accounts for margin on both sides */
     }
 }
