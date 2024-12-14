@@ -53,7 +53,20 @@ p{
 	position: relative;
 }
 
-/* Navigation Bar */
+.about,
+.events,
+.contactus,
+.ourteam,
+.achievements{
+	text-align: center;
+	padding: 5% 10%;
+}
+.contactus{
+	padding-top: 5%;
+	padding-bottom: 0;
+}
+
+/* NAVIGATION BAR */
 .navbar{
 	width: 100%;
 	height: 65px;
@@ -84,12 +97,21 @@ p{
 	color: #fff;
 }
 .navbar_items ul a:hover {
-	color: #1e90ff; /* Change color on hover */
+	color: #1e90ff;
  }
  .navbar_items ul li a:active {
-    color: #1e90ff; /* Color for active link */
+    color: #1e90ff;
 }
-/* banner_image */
+.toggle-btn {
+	display: none;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+/* NAME AND PHOTO */
 .banner_image{
 	/* background: url('assets/2.jpeg') no-repeat top center; */
 	background-size: cover;
@@ -103,6 +125,7 @@ p{
 .banner_content{
 	text-align: center;
 	color: #fff;
+	padding: 5% 10%;
 }
 
 .banner_content h1{
@@ -110,250 +133,13 @@ p{
 	line-height: 38px;
 	margin-bottom: 15px;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: visible;
 }
-.logo {
-    max-width: 200px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
-	border-radius: 100px;
-	display: block;
-	margin: auto;
-}
-
-/* .banner_content h1 span{
-	color: #fb2274;
-} */
-
-
-/* About */
-.about,
-.events,
-.contactus,
-.ourteam,
-.achievements{
-	text-align: center;
-	padding: 5% 10%;
-}
-.contactus{
-	padding-top: 5%;
-	padding-bottom: 0;
-}
-/* .events{
-	background: url("6.webp") rgba(95, 87, 87, 0.5);
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-.about p{
-	font-size: 16px;
-}
-.contactus h3{
-	padding-top: 50px;
-	padding-bottom: 40px;
-	color: gray;
-}
-.social-icons a {
-	text-decoration: none;
-	color: whitesmoke; /* Customize the color */
-	margin: 0 10px;
-	font-size: 1.5rem;
-}
-  
-.social-icons a:hover {
-	color: #5f5f5f; /* Customize hover color */
-}
-  
-.diff_services {
-    margin-top: 35px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.diff_services .diff_services_item {
-    width: 30%;
-}
-
-.diff_services .diff_services_item img {
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-.diff_services .diff_services_item h3 {
-    color: #fb2274;
-    margin-bottom: 15px;
-}
-
-/* Contact us */
-.form_wrapper .form_input{
-	margin-bottom: 15px;
-}
-
-.form_wrapper .form_input input[type="text"]{
-	width: 250px;
-	padding: 12px 20px; 
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	color: black;
-}
-
-.form_wrapper .form_input textarea{
-	width: 250px;
-	padding: 12px 20px; 
-	height: 80px;
-	resize: none;
-	border: 1px solid  #ccc;
-	border-radius: 4px;
-	color: black;
-}
-/* .ourteam{
-	background: #f5f5f5;
-} */
-
-.ourteam_wrapper{
-	display: flex;
-	flex-direction: column;
-}
-.ourteam_wrapper a {
-    color: #3884d6; /* Set your desired color */
-    text-decoration: none; /* Removes underline */
-}
-
-/* Hover effect */
-.ourteam_wrapper a:hover {
-    color: #0056b3; /* Color on hover */
-    text-decoration: underline; /* Adds underline on hover */
-}
-
-/* Visited link color */
-.ourteam_wrappera:visited {
-    color: #551a8b; /* Color for visited links */
-}
-.ourteam_wrapper h3{
-	padding-top: 20px;
-	padding-bottom: 5px;
-	color: white;
-}
-.team p{
-	padding: 8px;
-}
-.ourteam_wrapper .team{
-	display: flex;
-	justify-content: space-between;
-}
-
-.ourteam_wrapper .team-1.team{
-	margin-bottom: 25px;
-}
-
-.ourteam_wrapper .team_members{
-	width: 30%;
-	height: auto;
-	cursor: pointer;
-	overflow: hidden;
-	position: relative;
-	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52));
-	background-clip: padding-box;
-	border-radius: 16px;
-}
-.ourteam_wrapper .team_members:hover{
-	background-image: linear-gradient(90deg, rgb(24, 3, 35), rgb(10, 4, 41));
-	background-clip: padding-box;
-}
-
-.ourteam_wrapper .team_members img{
-	display: block;
-	width: 100%;
-	height: auto;
-	transition: all 0.5s ease;
-	border-radius: 12px;
-}
-
-.ourteam_wrapper .team_members:hover img{
-	transform: scale(1.08);
-}
-
-/* achievements */
-.achieve_content .design{
-	width: 30%;
-	height: auto;
-	cursor: pointer;
-	overflow: hidden;
-	position: relative;
-	padding: 0.5rem 1rem;
-	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52)),
-	  linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
-	background-clip: padding-box, border-box;
-	background-origin: border-box;
-	border: 2px solid transparent;
-	border-radius: 1.75rem;
-
-}
-.achieve_content .python{
-	width: 30%;
-	height: auto;
-	cursor: pointer;
-	overflow: hidden;
-	position: relative;
-	background-color: #181717;
-	background: transparent;
-	padding: 0.5rem 1rem;
-	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52)),
-	  linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
-	background-clip: padding-box, border-box;
-	background-origin: border-box;
-	border: 2px solid transparent;
-	border-radius: 1.75rem;
-}
-.achieve_content .design img{
-	display: block;
-	margin: auto;
-	width: 90%;
-	height: auto;
-	transition: all 0.5s ease;
-	border-radius: 12px;
-}
-.achieve_content .design:hover{
-	transform: scale(1.02);
-}
-.achieve_content .python:hover{
-	transform: scale(1.02);
-}
-.achieve_content .python img{
-	display: block;
-	margin: auto;
-	width: 60%;
-	height: auto;
-	transition: all 0.5s ease;
-	border-radius: 12px;
-}
-.achieve_content .team{
-	display: flex;
-	justify-content: space-around;
-}
-.achieve_content h3{
-	padding-top: 20px;
-	padding-bottom: 0px;
-	color: white;
-}
-/* .diff_services .diff_services_item:hover img{
-	transform: scale(1.1);
-} */
-/* footer */
-/* .footer{
-	width: 100%;
-	text-align: center;
-	background: #444444;
-	padding: 20px 0;
-}
-
-.footer a{
-	color: #fff;
-} */
 
 .static-text {
     color: #1e90ff;
     font-weight: bold;
+	max-width: fit-content;
 }
 
 .dynamic-text {
@@ -387,35 +173,399 @@ p{
         transform: translateY(0);
     }
 }
-@media (max-width: 720px){
+.logo {
+    max-width: 200px;
+    height: auto;
+	border-radius: 100px;
+	display: block;
+	margin: auto;
+}
 
-	.navbar{
-		height: auto;
-		flex-direction: column;
-	}
+/* .banner_content h1 span{
+	color: #fb2274;
+} */
 
-	.logo{
-		margin-bottom: 25px;
-	}
 
-	.navbar_items ul{
-		flex-direction: column;
-		text-align: center;
-	}
+/* .events{
+	background: url("6.webp") rgba(95, 87, 87, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 
-	.navbar_items ul li{
-		margin-bottom:5px;
-	}
+/* ABOUT */
+.about p{
+	font-size: 16px;
+}
+.contactus h3{
+	padding-top: 50px;
+	padding-bottom: 40px;
+	color: gray;
+}
+.social-icons a {
+	text-decoration: none;
+	color: whitesmoke;
+	margin: 0 10px;
+	font-size: 1.5rem;
+}
+  
+.social-icons a:hover {
+	color: #5f5f5f;
+}
+  
+.diff_services {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
 
-	.banner_content{
-		margin-top: 35px;
-	}
+.diff_services .diff_services_item {
+    width: 30%;
+}
 
+.diff_services .diff_services_item img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.diff_services .diff_services_item h3 {
+    color: #fb2274;
+    margin-bottom: 15px;
+}
+
+/* PROJECTS */
+
+/* .ourteam{
+	background: #f5f5f5;
+} */
+
+/* .ourteam_wrapper{
+	display: flex;
+	flex-direction: column;
+} */
+.ourteam_wrapper a {
+    color: #3884d6;
+    text-decoration: none;
 }
 
 
-/* arrow */
-.arrow{
+.ourteam_wrapper a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+.ourteam_wrappera:visited {
+    color: #551a8b;
+}
+.ourteam_wrapper h3{
+	padding-top: 20px;
+	padding-bottom: 5px;
+	color: white;
+}
+.team p{
+	padding: 8px;
+}
+.ourteam_wrapper .team{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.ourteam_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+}
+
+.ourteam_wrapper .team_members{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52));
+	background-clip: padding-box;
+	border-radius: 16px;
+}
+.ourteam_wrapper .team_members:hover{
+	background-image: linear-gradient(90deg, rgb(24, 3, 35), rgb(10, 4, 41));
+	background-clip: padding-box;
+}
+
+.ourteam_wrapper .team_members img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
+	border-radius: 12px;
+}
+
+.ourteam_wrapper .team_members:hover img{
+	transform: scale(1.1);
+}
+
+/* ACHIEVEMENTS */
+.achieve_content{
+	display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.achieve_content .design{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	padding: 0.5rem 1rem;
+	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52)),
+	  linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+	background-clip: padding-box, border-box;
+	background-origin: border-box;
+	border: 2px solid transparent;
+	border-radius: 1.75rem;
+
+}
+.achieve_content .python{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	background-color: #181717;
+	background: transparent;
+	padding: 0.5rem 1rem;
+	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52)),
+	  linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+	background-clip: padding-box, border-box;
+	background-origin: border-box;
+	border: 2px solid transparent;
+	border-radius: 1.75rem;
+}
+.achieve_content .design img{
+	margin: auto;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
+	border-radius: 12px;
+}
+.achieve_content .design:hover{
+	transform: scale(1.02);
+}
+.achieve_content .python:hover{
+	transform: scale(1.02);
+}
+.achieve_content .python img{
+	margin: auto;
+	width: 60%;
+	height: auto;
+	transition: all 0.5s ease;
+	border-radius: 12px;
+}
+.achieve_content .team{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.achieve_content h3{
+	padding-top: 20px;
+	padding-bottom: 0px;
+	color: white;
+}
+/* .diff_services .diff_services_item:hover img{
+	transform: scale(1.1);
+} */
+
+/* SKILLS */
+.ourteam{
+	padding: 20px;
+	overflow: hidden;
+}
+.event-gallery {
+    display: flex;
+    /* width: calc(200px * 5); Width of one set of images */
+    animation: scroll 10s linear infinite; /* Continuous scrolling animation */
+	padding: 0 50px;
+	
+}
+.event-gallery h5{
+	color: white;
+}
+.event-item {
+    margin: 0 40px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.event-item img {
+    border-radius: 8px;
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+
+.event-item:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% + 100px)); /* Accounts for margin on both sides */
+    }
+}
+/* CONTACT US */
+
+.form_wrapper .form_input{
+	margin-bottom: 15px;
+}
+
+.form_wrapper .form_input input[type="text"]{
+	width: 250px;
+	padding: 12px 20px; 
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	color: black;
+}
+
+.form_wrapper .form_input textarea{
+	width: 250px;
+	padding: 12px 20px; 
+	height: 80px;
+	resize: none;
+	border: 1px solid  #ccc;
+	border-radius: 20px;
+	color: black;
+}
+
+/* FOOTER */
+/* .footer{
+	width: 100%;
+	text-align: center;
+	background: #444444;
+	padding: 20px 0;
+}
+
+.footer a{
+	color: #fff;
+} */
+
+@media screen and (max-width: 700px) {
+	/* PROJECTS */
+    .ourteam_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+	.ourteam_wrapper .team_members {
+        width: 100%;
+		margin-bottom: 60px;
+    }
+
+	/* ACHIEVEMENTS */
+	.achieve_content .team{
+		flex-direction: column;
+        align-items: center;
+	}
+	.achieve_content .design{
+		width: 100%;
+		margin-bottom: 40px;
+		
+	}
+	.achieve_content .python{
+		width: 100%;
+		
+	}
+	/* SKILLS */
+	.event-item img {
+		border-radius: 2px;
+		width: 70px; /* Adjust width as needed */
+		height: 70px; /* Adjust height as needed */
+	}
+	.event-item {
+		margin: 0 30px;
+		display: inline-block;
+		transition: transform 0.3s;
+	}
+}	
+
+@media screen and (max-width: 650px) {
+
+	/* NAVBAR */
+	.navbar{
+		width: 100%;
+		height: 65px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		position: fixed;
+		background-color: black;
+		z-index: 1000;
+	}
+	
+	.navbar_items {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #1b1a1af4; 
+		z-index: 1100;
+	}
+	
+	.navbar_items.active {
+		display: flex;
+	}
+	
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+	}
+	
+	.navbar_items ul li a {
+		color: rgb(213, 213, 213);
+		text-decoration: none;
+		font-size: 1.5rem;
+	}
+	
+	.navbar_items ul li a:hover {
+		color: #1e90ff;
+	}
+	
+	.toggle-btn {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		background-color: transparent;
+		border: none;
+		color: #585858;
+		font-size: 2.5rem;
+		z-index: 9999;
+		cursor: pointer;
+		display: block;
+	}
+	.toggle-btn:hover{
+		color: #3a3a3a;
+	}
+
+	/* NAME AND PHOTO */
+	.banner_content h1{
+		font-size: 24px;
+	}
+}
+
+/* ARROW */
+/* .arrow{
 	position: fixed;
 	bottom: 25px;
 	right: 25px;
@@ -433,42 +583,4 @@ p{
 	width: 20px;
 	height: 20px;
 	z-index: 1;
-}
-.ourteam{
-	padding: 20px;
-	overflow: hidden;
-}
-.event-gallery {
-    display: flex;
-    /* width: calc(200px * 5); Width of one set of images */
-    animation: scroll 10s linear infinite; /* Continuous scrolling animation */
-	padding: 0 50px;
-}
-.event-gallery h5{
-	color: white;
-}
-
-.event-item {
-    margin: 0 40px;
-    display: inline-block;
-    transition: transform 0.3s;
-}
-
-.event-item img {
-    border-radius: 8px;
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
-}
-
-.event-item:hover {
-    transform: scale(1.1); /* Scale up image on hover */
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-100% + 100px)); /* Accounts for margin on both sides */
-    }
-}
+} */

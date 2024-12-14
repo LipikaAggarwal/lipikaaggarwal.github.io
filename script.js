@@ -53,3 +53,17 @@ gallery.addEventListener('mouseover', () => {
 gallery.addEventListener('mouseout', () => {
     gallery.style.animationPlayState = 'running'; 
 });
+
+const toggleBtn = document.getElementById("toggle-btn");
+const navbarItems = document.querySelector(".navbar_items");
+
+toggleBtn.addEventListener("click", () => {
+  navbarItems.classList.toggle("active");
+});
+
+const menuLinks = document.querySelectorAll(".navbar_items ul li a");
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        navbarItems.classList.remove("active");
+    });
+});
