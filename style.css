@@ -389,8 +389,7 @@ p{
 }
 .event-gallery {
     display: flex;
-    /* width: calc(200px * 5); Width of one set of images */
-    animation: scroll 10s linear infinite; /* Continuous scrolling animation */
+    animation: scroll 10s linear infinite;
 	padding: 0 50px;
 	
 }
@@ -405,19 +404,19 @@ p{
 
 .event-item img {
     border-radius: 8px;
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
+    width: 100px;
+    height: 100px;
 }
 
 .event-item:hover {
-    transform: scale(1.1); /* Scale up image on hover */
+    transform: scale(1.1);
 }
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-100% + 100px)); /* Accounts for margin on both sides */
+        transform: translateX(calc(-100% + 100px));
     }
 }
 /* CONTACT US */
@@ -484,8 +483,8 @@ p{
 	/* SKILLS */
 	.event-item img {
 		border-radius: 2px;
-		width: 70px; /* Adjust width as needed */
-		height: 70px; /* Adjust height as needed */
+		width: 70px;
+		height: 70px;
 	}
 	.event-item {
 		margin: 0 30px;

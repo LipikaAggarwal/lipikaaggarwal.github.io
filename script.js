@@ -1,7 +1,7 @@
 const dynamicText = document.querySelector('.dynamic-text');
 const cursor = document.querySelector('.cursor');
 
-// Array of phrases to cycle through
+
 const phrases = [
     "a B.Tech student",
     "a tech enthusiast",
@@ -54,6 +54,7 @@ gallery.addEventListener('mouseout', () => {
     gallery.style.animationPlayState = 'running'; 
 });
 
+// NAVBAR
 const toggleBtn = document.getElementById("toggle-btn");
 const navbarItems = document.querySelector(".navbar_items");
 
