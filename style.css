@@ -75,6 +75,8 @@ p{
 .contactus{
 	padding-top: 5%;
 	padding-bottom: 0;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 /* NAVIGATION BAR */
@@ -447,33 +449,37 @@ p{
 
 .form_wrapper .form_input input[type="text"] {
     width: 100%;
-    padding: 10px 180px;
+    padding: 10px 200px;
     color: rgb(219, 218, 218);
     background: transparent;
     border: none;
     border-bottom: 2px solid #375075; 
     font-size: medium;
 	border-radius: 4px;
+	text-align: center;
+	
 }
 .form_wrapper .form_input input[type="email"] {
     width: 100%;
-    padding: 10px 180px;
+    padding: 10px 200px;
     color: rgb(219, 218, 218);
     background: transparent;
     border: none;
     border-bottom: 2px solid #375075; 
     font-size: medium;
 	border-radius: 4px;
+	text-align: center;
 }
 .form_wrapper .form_input textarea{
 	width: 100%;
-    padding: 10px 180px;
     color: rgb(219, 218, 218);
     background: transparent;
     border: none;
     border-bottom: 2px solid #375075; 
     font-size: medium;
 	border-radius: 4px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 .social-icons{
@@ -491,6 +497,53 @@ p{
 .footer a{
 	color: #fff;
 } */
+@media screen and (max-width: 1200px) {
+	.form_wrapper .form_input input[type="text"] {
+		width: 100%;
+		padding: 10px 140px;
+	}
+	.form_wrapper .form_input input[type="email"] {
+		width: 100%;
+		padding: 10px 140px;
+	}
+	
+}
+@media screen and (max-width: 1130px) {
+	.form_wrapper .form_input input[type="text"] {
+		width: 100%;
+		padding: 10px 120px;
+	}
+	.form_wrapper .form_input input[type="email"] {
+		width: 100%;
+		padding: 10px 120px;
+	}	
+}
+@media screen and (max-width: 1000px) {
+	.form_wrapper .form_input input[type="text"] {
+		width: 100%;
+		padding: 10px 100px;
+	}
+	.form_wrapper .form_input input[type="email"] {
+		width: 100%;
+		padding: 10px 100px;
+	}
+}
+@media screen and (max-width: 920px) {
+	/* FORM */
+	.form_wrapper .form{
+        flex-direction: column;
+        align-items: center;
+    }
+	.form_wrapper .form_input input[type="text"] {
+		width: 100%;
+	}
+	.form_wrapper .form_input input[type="email"] {
+		width: 100%;
+	}
+	.form_wrapper .form_input textarea{
+		width: 100%;
+	}
+}
 
 @media screen and (max-width: 700px) {
 	/* PROJECTS */
@@ -502,7 +555,9 @@ p{
         width: 100%;
 		margin-bottom: 60px;
     }
-
+	.ourteam_wrapper .team_members:hover img{
+		transform: scale(1.05);
+	}
 	/* ACHIEVEMENTS */
 	.achieve_content .team{
 		flex-direction: column;
@@ -598,6 +653,11 @@ p{
 	.banner_content h1{
 		font-size: 24px;
 	}
+		/* FORM */
+		.form_wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
 }
 
 /* ARROW */

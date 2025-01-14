@@ -3,13 +3,14 @@ const cursor = document.querySelector('.cursor');
 
 
 const phrases = [
-    "a student",
-    "an aspiring frontend developer",
-    "a skilled in Python and Java",
+    "a tech enthusiast",
+    "a web developer",
+    "a Python coder",
+    "learning Java",
     "an AI/ML enthusiast",
-    "a creative problem solver",
-    "a passionate tech learner"
+    "a problem solver"
 ];
+
 
 let currentPhraseIndex = 0;
 let currentLetterIndex = 0;
