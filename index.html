@@ -52,35 +52,42 @@
 		<div class="ourteam_wrapper">
 			<div class="team-1 team">
 				<div class="team_members" data-name="LLM Memory Estimator">
-					<img src="assets/gpu.png" alt="project1">
 					<h3 class="sub_title">LLM Memory Estimator</h3>
+					<img src="assets/gpu.png" alt="project1">
 					<p>
 						The <b>LLM Memory Estimator</b> is a web application that calculates GPU memory requirements for large language models (LLMs). 
 						Users can input the number of parameters and select quantization techniques, receiving immediate memory estimations.
 						The tool features an intuitive interface, comprehensive documentation on memory calculations, and state-of-the-art memory optimization techniques, making it suitable for both novice and experienced users.
 						<br><br>
-						Visit the project <a href="https://lipikaaggarwal.github.io/LLM-Memory-Estimator/">LLM Memory Estimator</a>
+						#Html #CSS #JavaScript
+						<br><br>
+						<i class="fa-solid fa-link"></i> <a href="https://lipikaaggarwal.github.io/LLM-Memory-Estimator/">LLM Memory Estimator</a>
 					</p>
 				</div>
 				<div class="team_members" data-name="Bill Counter">
-					<img src="assets/bill.png" alt="project2">
 					<h3 class="sub_title">Bill Counter</h3>
+					<img src="assets/bill.png" alt="project2">
 					<p>The <b>Bill Counter</b> is a web application built on Node.js that streamlines the process of counting and managing bills.
 						It features a secure login and signup page, allowing users to create personalized accounts.
 						With an intuitive interface, users can easily input bill amounts and receive a total count, enhancing efficiency in bill management. 
 						This project exemplifies practical web development skills and user-focused design.
 						<br><br>
-						Visit the project repository <a href="https://github.com/LipikaAggarwal/Bill-Counter">Bill Counter</a></p>
+						#JavaScript #NodeJs
+						<br><br>
+						<i class="fa-brands fa-github"></i> <a href="https://github.com/LipikaAggarwal/Bill-Counter">Bill Counter</a>
+					</p>
 				</div>
 				<div class="team_members" data-name="Bank Management Systemt">
-					<img src="assets/bank.png" alt="project3">
 					<h3 class="sub_title">Bank Management Systemt</h3>
+					<img src="assets/bank.png" alt="project3">
 					<p>The <b>Bank Management System</b> is a Python application with a graphical user interface (GUI) built using Tkinter. 
 						It leverages MySQL for database management, allowing users to create and manage bank accounts efficiently.
 						Key functionalities include account creation, balance inquiry, deposits, withdrawals, and transaction history, providing a comprehensive solution for banking operations.
 						This project emphasizes user-friendly design and efficient data handling, making it suitable for both learning and practical applications in banking.
 						<br><br>
-						Visit the project repository <a href="https://github.com/LipikaAggarwal/Bank-Management-System?tab=readme-ov-file">Bank Management Systemt</a>
+						#Python #SQL #Tkinter
+						<br><br>
+						<i class="fa-brands fa-github"></i> <a href="https://github.com/LipikaAggarwal/Bank-Management-System?tab=readme-ov-file">Bank Management Systemt</a>
 					</p>
 				</div>
 			</div>
@@ -149,20 +156,27 @@
 
     <div class="contactus" id="contactme">
 		<h1 class="title">Contact</h1>
+		<h3>Get in Touch</h3>
+		<form action="database.php" method="post" id="form">
 		<div class="form_wrapper">
-			<div class="form_input">
-				<input type="text" placeholder="Your Name">
+			<div class="form">
+				<div class="form_input">
+					<input type="text" placeholder="Your Name" name="name">
+				</div>
+				<div class="form_input">
+					<input type="email" placeholder="Your Email" name="email" required>
+				</div>
 			</div>
 			<div class="form_input">
-				<input type="text" placeholder="Your Email">
-			</div>
-			<div class="form_input">
-				<textarea placeholder="Message"></textarea>
-			</div>
-			<div class="btn">
-				<a href="#">Submit</a>
+				<textarea placeholder="Message" name="text"></textarea>
 			</div>
 		</div>
+	 </form>
+	 <div class="btn" onclick="resetForm()">
+		<a  target="_blank" aria-label="Message" onclick="resetForm(); return false;">
+			<i class="fa-regular fa-paper-plane"></i> Send Message
+		</a>
+	</div>
 		<h3>Connect with me on social media</h3>
 		<div class="social-icons">
 			<a href="https://github.com/LipikaAggarwal" target="_blank" aria-label="GitHub">

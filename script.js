@@ -3,17 +3,12 @@ const cursor = document.querySelector('.cursor');
 
 
 const phrases = [
-    "a B.Tech student",
-    "a tech enthusiast",
-    "a developer",
+    "a student",
+    "an aspiring frontend developer",
+    "a skilled in Python and Java",
     "an AI/ML enthusiast",
-    "passionate about innovation",
-    "skilled in Python and C",
-    "proficient in HTML, CSS, and JavaScript",
-    "driven to solve real-world problems",
-    "a quick learner",
-    "collaborative and team-oriented",
-    "a problem solver"
+    "a creative problem solver",
+    "a passionate tech learner"
 ];
 
 let currentPhraseIndex = 0;
@@ -68,3 +63,8 @@ menuLinks.forEach((link) => {
         navbarItems.classList.remove("active");
     });
 });
+
+// FORM
+function resetForm() {
+    document.getElementById("form").reset();
+}

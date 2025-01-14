@@ -11,7 +11,10 @@
 	/* background-color: black; */
 }
 body {
-	background-color: black;
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2e2e2e, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2d2c2c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
   }
   
 h1.title{
@@ -37,16 +40,24 @@ p{
     width: 180px;
     height: 35px;
     line-height: 35px;
-    border: 2px solid #323232;
-	border-radius: 20px;
     color: #daccd1;
-	background-color: #414041;
+	background-image: linear-gradient(315deg, #000000 0%, #000000 74%),
+		linear-gradient(315deg, #24201c 0%,  #375075 74%);
+	background-clip: padding-box, border-box;
+	background-origin: border-box;
+	border: 2px solid transparent;
+	border-radius: 16px;
     display: block;
     margin: 25px auto 0;
     text-align: center;
 }
 .btn a:hover{
-	background-color: #1d1c1c;
+	background-image: linear-gradient(315deg, #2c2c2c 0%, #2c2c2c 74%),
+		linear-gradient(315deg, #24201c 0%,  #375075 74%);
+	background-clip: padding-box, border-box;
+	background-origin: border-box;
+	border: 2px solid transparent;
+	cursor: pointer;
 }
 
 .main_container{
@@ -97,7 +108,7 @@ p{
 	color: #fff;
 }
 .navbar_items ul a:hover {
-	color: #1e90ff;
+	color: #1662e6;
  }
  .navbar_items ul li a:active {
     color: #1e90ff;
@@ -137,14 +148,15 @@ p{
 }
 
 .static-text {
-    color: #1e90ff;
+    color: #1662e6;
     font-weight: bold;
 	max-width: fit-content;
 }
 
 .dynamic-text {
     display: inline-block;
-    color: #1e90ff;
+    color: #1662e6;
+
     font-weight: bold;
 }
 
@@ -265,7 +277,9 @@ p{
 	color: white;
 }
 .team p{
-	padding: 8px;
+	padding: 18px;
+	color: #cecbcbf4;
+	text-align: left;
 }
 .ourteam_wrapper .team{
 	display: flex;
@@ -289,21 +303,24 @@ p{
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
-	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52));
-	background-clip: padding-box;
+	background-image: linear-gradient(315deg, #1c2535 0%, #12100e 74%),
+		linear-gradient(315deg, #24201c 0%,  #375075 74%);
+	background-clip: padding-box, border-box;
+	border: 2px solid transparent;
 	border-radius: 16px;
 }
-.ourteam_wrapper .team_members:hover{
-	background-image: linear-gradient(90deg, rgb(24, 3, 35), rgb(10, 4, 41));
+/* .ourteam_wrapper .team_members:hover{
+	background-image: linear-gradient(315deg, #1c2535 0%, #12100e 74%);
 	background-clip: padding-box;
-}
+} */
 
 .ourteam_wrapper .team_members img{
+	padding: 20px 20px;
 	display: block;
 	width: 100%;
 	height: auto;
 	transition: all 0.5s ease;
-	border-radius: 12px;
+	border-radius: 28px;
 }
 
 .ourteam_wrapper .team_members:hover img{
@@ -324,8 +341,8 @@ p{
 	overflow: hidden;
 	position: relative;
 	padding: 0.5rem 1rem;
-	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52)),
-	  linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+	background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%),
+		linear-gradient(315deg, #24201c 0%,  #375075 74%);
 	background-clip: padding-box, border-box;
 	background-origin: border-box;
 	border: 2px solid transparent;
@@ -341,8 +358,8 @@ p{
 	background-color: #181717;
 	background: transparent;
 	padding: 0.5rem 1rem;
-	background-image: linear-gradient(90deg, rgb(38, 20, 44), rgb(28, 24, 52)),
-	  linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+	background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%),
+		linear-gradient(315deg, #24201c 0%,  #375075 74%);
 	background-clip: padding-box, border-box;
 	background-origin: border-box;
 	border: 2px solid transparent;
@@ -421,26 +438,46 @@ p{
 }
 /* CONTACT US */
 
-.form_wrapper .form_input{
+.form_wrapper .form{
 	margin-bottom: 15px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.form_wrapper .form_input input[type="text"]{
-	width: 250px;
-	padding: 12px 20px; 
-	border: 1px solid #ccc;
-	border-radius: 20px;
-	color: black;
+.form_wrapper .form_input input[type="text"] {
+    width: 100%;
+    padding: 10px 180px;
+    color: rgb(219, 218, 218);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #375075; 
+    font-size: medium;
+	border-radius: 4px;
 }
-
+.form_wrapper .form_input input[type="email"] {
+    width: 100%;
+    padding: 10px 180px;
+    color: rgb(219, 218, 218);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #375075; 
+    font-size: medium;
+	border-radius: 4px;
+}
 .form_wrapper .form_input textarea{
-	width: 250px;
-	padding: 12px 20px; 
-	height: 80px;
-	resize: none;
-	border: 1px solid  #ccc;
-	border-radius: 20px;
-	color: black;
+	width: 100%;
+    padding: 10px 180px;
+    color: rgb(219, 218, 218);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #375075; 
+    font-size: medium;
+	border-radius: 4px;
+}
+
+.social-icons{
+	margin-bottom: 20px;
 }
 
 /* FOOTER */
