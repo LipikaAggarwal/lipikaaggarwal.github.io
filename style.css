@@ -11,9 +11,9 @@
 	/* background-color: black; */
 }
 body {
-	background: #000000;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2e2e2e, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2d2c2c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #000000;
+	background: -webkit-linear-gradient(to right, #2e2e2e, #000000); 
+	background: linear-gradient(to right, #2d2c2c, #000000);
 	
   }
   
@@ -126,7 +126,7 @@ p{
   
 /* NAME AND PHOTO */
 .banner_image{
-	/* background: url('assets/2.jpeg') no-repeat top center; */
+	/* background: url('assets/2.jpeg'); */
 	background-size: cover;
 	width: 100%;
 	height: 600px;
@@ -449,7 +449,7 @@ p{
 
 .form_wrapper .form_input input[type="text"] {
     width: 100%;
-    padding: 10px 200px;
+    padding: 10px 180px;
     color: rgb(219, 218, 218);
     background: transparent;
     border: none;
@@ -461,7 +461,7 @@ p{
 }
 .form_wrapper .form_input input[type="email"] {
     width: 100%;
-    padding: 10px 200px;
+    padding: 10px 180px;
     color: rgb(219, 218, 218);
     background: transparent;
     border: none;
