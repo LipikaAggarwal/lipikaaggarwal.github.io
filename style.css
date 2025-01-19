@@ -482,10 +482,14 @@ p{
 	margin-top: 20px;
 }
 
-.social-icons{
-	margin-bottom: 20px;
+.social-icons p{
+	margin-bottom: 5px;
+	color: rgb(219, 218, 218);
+	font-size: medium;
 }
-
+.social-icons p:hover{
+	text-decoration: underline;
+}
 /* FOOTER */
 /* .footer{
 	width: 100%;
