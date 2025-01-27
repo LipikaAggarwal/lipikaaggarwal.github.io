@@ -65,7 +65,3 @@ menuLinks.forEach((link) => {
     });
 });
 
-// FORM
-function resetForm() {
-    document.getElementById("form").reset();
-}

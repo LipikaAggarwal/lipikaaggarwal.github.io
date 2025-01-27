@@ -157,7 +157,44 @@
     <div class="contactus" id="contactme">
 		<h1 class="title">Contact</h1>
 		<h3>Get in Touch</h3>
+
 		<form action="database.php" method="post" id="form">
+			<div class="form_wrapper">
+				<div class="form">
+					<div class="form_input">
+						<input type="text" placeholder="Your Name" name="name" required>
+					</div>
+					<div class="form_input">
+						<input type="email" placeholder="Your Email" name="email" required>
+					</div>
+				</div>
+				<div class="form_input">
+					<textarea placeholder="Message" name="text" required></textarea>
+				</div>
+				<!-- Submit Button to send form data -->
+
+
+				<div class="btn" onclick="sendMessage()">
+					<a target="_blank" aria-label="Message" onclick="sendMessage(); return false;">
+						<i class="fa-regular fa-paper-plane"></i> &nbsp; Send Message
+					</a>
+				</div>
+
+
+				<!-- <div class="form_input">
+					<button type="submit">Send Message</button>
+				</div>
+			</div> -->
+		</form>
+	
+
+
+
+
+
+
+
+		<!-- <form action="database.php" method="post" id="form">
 		<div class="form_wrapper">
 			<div class="form">
 				<div class="form_input">
@@ -176,7 +213,14 @@
 		<a  target="_blank" aria-label="Message" onclick="resetForm(); return false;">
 			<i class="fa-regular fa-paper-plane"></i> &nbsp; Send Message
 		</a>
-	</div>
+	</div> -->
+
+
+
+
+
+
+
 		<h3>Connect with me on social media</h3>
 		<div class="social-icons">
 			<a href="https://github.com/LipikaAggarwal" target="_blank" aria-label="GitHub">
