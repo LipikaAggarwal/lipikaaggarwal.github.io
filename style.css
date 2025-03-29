@@ -88,7 +88,7 @@ p{
 	align-items: center;
 	position: fixed;
 	background: linear-gradient(to right, #030c0f , #0a2a37, #040f12);
-	backdrop-filter: brightness(60%);
+	/* backdrop-filter: brightness(60%); */
 	z-index: 1000;
 }
 
