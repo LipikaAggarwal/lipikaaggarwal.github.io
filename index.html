@@ -220,23 +220,26 @@
 			<div class="form_wrapper">
 				<div class="form">
 					<div class="form_input">
-						<input type="text" placeholder="Your Name" name="name" required>
+						<input type="text" id="name" placeholder="Your Name" name="name" required>
 					</div>
 					<div class="form_input">
-						<input type="email" placeholder="Your Email" name="email" required>
+						<input type="email" id="email" placeholder="Your Email" name="email" required>
 					</div>
 				</div>
 				<div class="form_input">
-					<textarea placeholder="Message" name="text" required></textarea>
+					<textarea placeholder="Message" id="message" name="text" required></textarea>
 				</div>
 				<!-- Submit Button to send form data -->
+				 <button class="submitbutton" type="submit">
+					<i class="fa-regular fa-paper-plane"></i> &nbsp; Send Message</button>
 
-
+<!-- 
     <div class="btn form_input">
         <a href="javascript:void(0);" aria-label="Message" onclick="document.getElementById('form').submit();">
             <i class="fa-regular fa-paper-plane"></i> &nbsp; Send Message
         </a>
-    </div>
+    </div> -->
+</form>
 
 
 				<!-- <div class="form_input">
